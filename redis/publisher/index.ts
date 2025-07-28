@@ -6,7 +6,9 @@ const event = {
   type: 'user.created',
   payload: {
     id: '1',
-    name: 'Test event'
+    username: 'nickop',
+    instagram: 'bizrgames',
+    createdAt: new Date().toISOString()
   }
 };
 

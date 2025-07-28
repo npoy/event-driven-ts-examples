@@ -1,13 +1,14 @@
 {
-  "name": "event-driven-ts-redis",
+  "name": "event-driven-ts-bullmq",
   "type": "module",
   "scripts": {
     "start": "docker-compose up --build",
     "start:redis": "docker-compose up -d redis",
     "pub": "tsx publisher/index.ts",
-    "sub": "tsx subscriber/index.ts"
+    "sub": "tsx worker/index.ts"
   },
   "dependencies": {
+    "bullmq": "^5.10.0",
     "ioredis": "^5.4.1"
   },
   "devDependencies": {
